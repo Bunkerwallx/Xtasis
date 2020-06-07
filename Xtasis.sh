@@ -20,8 +20,8 @@ echo -e $white"============================================"
 echo -e $red"www.lapestenegra.com by.Bunkerwallx"
 echo -e $green"============================================"
 echo -e $white" modifica tu archivo sources.list con mirrors de diferentes paises y proyectos de kali linux"        
-       
-       
+echo""       
+echo""       
        echo >> "/etc/apt/sources.list.r"
 
        cp /etc/apt/sources.list /etc/apt/sources.list.r
