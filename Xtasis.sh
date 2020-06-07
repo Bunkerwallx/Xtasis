@@ -29,7 +29,7 @@ echo""
        cp /etc/apt/sources.list /etc/apt/sources.list.r
        rm /etc/apt/sources.list 
        echo >> /etc/sources.list
-       echo #!/etc/apt/sources.list
+       echo "#!/etc/apt/sources.list"
        echo "deb http://http.kali.org/kali/ kali-rolling non-free contrib main" >> /etc/apt/sources.list
        echo "deb-src http://http.kali.org/kali/ kali-rolling non-free contrib main" >> /etc/apt/sources.list
        echo "deb http://mir.linux.kg/debian buster main non-free contrib" >> /etc/apt/sources.list
