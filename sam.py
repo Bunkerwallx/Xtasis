@@ -15,10 +15,8 @@ while intentos > 0:
 		break
 		else:
 			print("ID incorrecto")
-    ...:         break
-    ...:     else:
- mmmm
-    ...:         intentos -= 1
+			intentos -= 1
+ 
     ...:      if intentos == 0:
 
 
