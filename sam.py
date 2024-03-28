@@ -17,6 +17,7 @@ while intentos > 0:
 			print("ID incorrecto")
 			intentos -= 1
 			if intentos == 0:
+				print("se agotaron tus intentod")
 
 
 
