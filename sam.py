@@ -16,8 +16,8 @@ while intentos > 0:
 		else:
 			print("ID incorrecto")
 			intentos -= 1
- 
-    ...:      if intentos == 0:
+			if intentos == 0:
+
 
 
 
