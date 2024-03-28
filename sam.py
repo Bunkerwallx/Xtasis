@@ -23,6 +23,36 @@ original_password = b'BunkerWallx500'
 encrypted_password = cipher.encrypt(pad(original_password, AES.block_size))
 print("Contraseña encriptada: ", base64.b64encode(encrypted_password))
 
+for _ in range(5):
+    input_password = input("Ingresa tu ID: ").encode()
+
+    # Encripta la contraseña ingresada por el usuario
+    encrypted_input_password = cipher.encrypt(pad(input_password, AES.block_size))
+
+    if encrypted_input_password == encrypted_password:
+        print("CORRECTO")
+        break
+    else:
+        print("INCORRECTO")
+else:
+    print("Se acabaron tus intentos")
+time.sleep(4)
+
+def identificar_sistema_operativo():
+    sistema_operativo = platform.system()
+    if sistema_operativo == 'Windows':
+        return 'Windows'
+    elif sistema_operativo == 'Linux':
+        return 'Linux'
+    elif sistema_operativo == 'Darwin':
+        return 'macOS'
+    else:
+        return 'No se puede identificar el sistema operativo'
+
+print(identificar_sistema_operativo())
+
+
+
 # Función para verificar la conexión a Internet
 def verificar_conexion_internet():
     try:
