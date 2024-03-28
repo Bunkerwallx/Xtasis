@@ -11,8 +11,8 @@ passwd_correcto = "Bunker"
 while intentos > 0:
 	passwd = input(" Ingresa tu ID : ")
 	if passwd == passwd_correcto:
-		print(
-          print('ID correcto')
+		print("ID correcto")
+		break
     ...:         break
     ...:     else:
     ...:         print("ID incorrecto")
