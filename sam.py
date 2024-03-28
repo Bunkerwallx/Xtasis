@@ -5,7 +5,9 @@ import  sys
 
 texto = pyfiglet.print_figlet("\n Bunker",  font='slant', colors='blue')
 
-intentos =
+intentos =  5
+passwd_correcto = ""
+
 while intentos > 0:
           passwd = input("Ingresa Tu ID>: ")
      if passwd == pass_co:
