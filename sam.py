@@ -34,6 +34,6 @@ for _ in range(5):
     else:
         print("INCORRECTO")
     continue
-        print("Se acabaron tus intentos")
+     range(5) =   print("Se acabaron tus intentos")
 
 
