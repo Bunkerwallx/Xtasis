@@ -19,7 +19,7 @@ def check_password():
         # Comprobar si la contraseña es correcta
         if user_password == correct_password:
             print("¡CORRECTO! Has ingresado la contraseña correcta.")
-            return
+            break
         else:
             print("INCORRECTO. Te quedan {} intentos.".format(attempts - i - 1))
 
