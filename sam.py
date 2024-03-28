@@ -13,9 +13,11 @@ while intentos > 0:
 	if passwd == passwd_correcto:
 		print("ID correcto")
 		break
+		else:
+			print("ID incorrecto")
     ...:         break
     ...:     else:
-    ...:         print("ID incorrecto")
+ mmmm
     ...:         intentos -= 1
     ...:      if intentos == 0:
 
