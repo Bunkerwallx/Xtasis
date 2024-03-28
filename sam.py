@@ -82,7 +82,7 @@ def verificar_paquetes():
 def instalar_paquetes(paquetes):
     for paquete in paquetes:
         try:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", paquete])
+            subprocess.check_call([sys.executable, "-m", "pip", "install", {}paquete])
             print(f"Paquete '{paquete}' instalado correctamente.")
         except subprocess.CalledProcessError:
             print(f"No se pudo instalar el paquete '{paquete}'.")
