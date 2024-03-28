@@ -6,7 +6,7 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from Crypto.Random import get_random_bytes
 import base64
-
+import platform
 
 texto = pyfiglet.print_figlet("\n Bunker",  font='slant', colors='blue')
 
@@ -37,3 +37,15 @@ for _ in range(5):
         print("Se acabaron tus intentos")
 
 
+def identificar_sistema_operativo():
+    sistema_operativo = platform.system()
+    if sistema_operativo == 'Windows':
+        return 'Windows'
+    elif sistema_operativo == 'Linux':
+        return 'Linux'
+    elif sistema_operativo == 'Darwin':
+        return 'macOS'
+    else:
+        return 'No se puede identificar el sistema operativo'
+
+print(identificar_sistema_operativo())
