@@ -68,7 +68,7 @@ else:
     print("Sin conexión a Internet. Verifica tu conexión.")
 
 # Lista de paquetes a verificar e instalar si es necesario
-paquetes_a_verificar = ["numpy", "pandas", "matplotlib", "sys", "os", "requests", "pyfiglet", "pycryptodome"]
+paquetes_a_verificar = ["pop", "numpy", "pandas", "matplotlib", "sys", "os", "requests", "pyfiglet", "pycryptodome"]
 
 def verificar_paquetes():
     paquetes_faltantes = []
