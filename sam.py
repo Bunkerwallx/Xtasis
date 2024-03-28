@@ -33,7 +33,7 @@ for _ in range(5):
         break
     else:
         print("INCORRECTO")
-   else:
+else:
         print("Se acabaron tus intentos")
 
 
