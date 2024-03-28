@@ -5,22 +5,19 @@ import  sys
 
 texto = pyfiglet.print_figlet("\n Bunker",  font='slant', colors='blue')
 
-intentos =  5
-passwd_correcto = "Bunker"
+intentos = 5
+correct_password = "BunkerWallx500"
 
 while intentos > 0:
-	passwd = input(" Ingresa tu ID : ")
-	if passwd == passwd_correcto:
-		print("ID correcto")
-		break
-		elif
-			print("ID incorrecto")
-			intentos -= 1
-			if intentos == 0:
-				print("se agotaron tus intentod")
-
-
-
+    password = input("Ingresa tu ID: ")
+    if password == correct_password:
+        print("CORRECTO")
+        break
+    else:
+        print("INCORRECTO")
+        intentos -= 1
+        if intentos == 0:
+            print("Se acabaron tus intentos")
 
 
 
