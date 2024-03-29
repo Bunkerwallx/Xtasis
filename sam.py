@@ -11,7 +11,7 @@ import random
 
 # Impresión del texto con estilo
 texto = pyfiglet.print_figlet("Bunker", font='slant', colors='blue')
-
+time.sleep()
 # Generación segura de la clave de encriptación
 key = get_random_bytes(32)  # Clave de encriptación
 cipher = AES.new(key, AES.MODE_ECB)  # Crea un nuevo objeto cifrado AES
